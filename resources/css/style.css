@@ -95,7 +95,7 @@ header .tablet {
     display: none;
   }
   header .tablet {
-    display: block;
+    display: flex;
     width: 100%;
   }
   header .tablet .button {
