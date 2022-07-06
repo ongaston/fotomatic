@@ -63,7 +63,7 @@ header nav ul {
 }
 
 nav li {
-  padding-left: 3.5rem;
+  /*padding-left: 3.5rem;*/
   color:#4a4a4a;
   font-size: 1rem;
   font-family: Roboto;
@@ -90,23 +90,42 @@ header .tablet {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 760px) {
+  nav li {
+    padding-left: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 760px) and (min-width: 550px) {
   header .desktop {
     display: none;
   }
   header .tablet {
     display: flex;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
   }
   header .tablet .button {
-    padding: .1875rem .5rem;
+    padding: .35rem .7rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
   }
+  header .tablet .logo {
+    width: auto;
+    padding-right: 1rem;
+  }
+  header .tablet ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   header .desktop {
     display: none;
   }
@@ -195,7 +214,44 @@ header .tablet {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 760px) and (min-width: 480px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  #sign-up-section .header {
+    position: relative;
+    top: 2.2rem;
+  }
+
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 3.125rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
