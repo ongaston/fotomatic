@@ -487,12 +487,26 @@ header .tablet {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+  #quotes-section .content {
+    margin: 0;
+    padding: 2.5rem;
+  }
+  #quotes-section img {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  #quotes-section .quote {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   #quotes-section content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
@@ -521,6 +535,12 @@ footer .content {
 
 footer .copyright {
   flex-grow: 1;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+  footer {
+    height: 1rem;
+  }
 }
 
 @media only screen and (min-width: 760px) {
