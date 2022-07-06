@@ -1,5 +1,4 @@
 /* Universal Styles */
-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -55,7 +54,7 @@ header .logo {
   flex: 1;
   color: #4a4a4a;
   font-size: 1.5rem;
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
 header nav ul {
@@ -66,7 +65,7 @@ nav li {
   /*padding-left: 3.5rem;*/
   color:#4a4a4a;
   font-size: 1rem;
-  font-family: Roboto;
+  font-family: "Roboto";
   line-height: 1.6;
 }
 
@@ -96,7 +95,7 @@ header .tablet {
   }
 }
 
-@media only screen and (max-width: 760px) and (min-width: 550px) {
+@media only screen and (max-width: 760px) and (min-width: 480px) {
   header .desktop {
     display: none;
   }
@@ -125,7 +124,7 @@ header .tablet {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 480px) {
   header .desktop {
     display: none;
   }
@@ -133,6 +132,11 @@ header .tablet {
   header .mobile {
     display: block;
     width: 100%;
+  }
+
+  header {
+    padding-bottom: 0;
+    height: auto;
   }
 
   header .content {
@@ -256,6 +260,9 @@ header .tablet {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
   }
 
   #sign-up-cta {
